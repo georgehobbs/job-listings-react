@@ -8,7 +8,7 @@ function MainContent() {
   const [filterItems, setFilters] = useState([]);
 
   function createListing(listing) {
-    const tags = [...listing.languages, ...listing.tools];
+    const tags = [listing.level, listing.role, ...listing.languages, ...listing.tools];
     const checker = (arr, target) => target.every(v => arr.includes(v));
     const displayItem = checker(tags, filterItems);
 

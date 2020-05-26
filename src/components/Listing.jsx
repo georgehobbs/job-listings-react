@@ -1,7 +1,7 @@
 import React from "react";
 
 function Listing(props) {
-  const tags = [...props.languages, ...props.tools];
+  const tags = [props.role, props.level, ...props.languages, ...props.tools];
 
   const filterItems = props.filterItems;
 
